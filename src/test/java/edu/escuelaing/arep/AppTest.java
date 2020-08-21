@@ -40,10 +40,10 @@ public class AppTest {
         lista.addNode(1503);
         Calculos programa = new Calculos(lista);
         DecimalFormat df = new DecimalFormat("#.00");
-        String mean = df.format(programa.mean());
-        String deviation = df.format(programa.deviation());
-        String cMean =  "550,60";
-        String cDeviation = "572,03";
+        String mean = df.format(programa.mean()).replaceAll(",", ".");
+        String deviation = df.format(programa.deviation()).replaceAll(",", ".");
+        String cMean =  "550.60";
+        String cDeviation = "572.03";
         assertEquals(mean, cMean);
         assertEquals(deviation, cDeviation);
         /*if(mean.equals(cMean) && deviation.equals(cDeviation)){
@@ -73,10 +73,10 @@ public class AppTest {
         lista.addNode(138.2);
         Calculos programa = new Calculos(lista);
         DecimalFormat df = new DecimalFormat("#.00");
-        String mean = df.format(programa.mean());
-        String deviation = df.format(programa.deviation());
-        String cMean =  "60,32";
-        String cDeviation = "62,26";
+        String mean = df.format(programa.mean()).replaceAll(",", ".");
+        String deviation = df.format(programa.deviation()).replaceAll(",", ".");
+        String cMean =  "60.32";
+        String cDeviation = "62.26";
         if(mean.equals(cMean) && deviation.equals(cDeviation)){
             resp = true;
         }
