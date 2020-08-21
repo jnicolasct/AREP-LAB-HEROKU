@@ -1,6 +1,6 @@
 package edu.escuelaing.arep;
-import edu.escuelaing.arep.LinkedList;
-import edu.escuelaing.arep.Calculos;
+/*import edu.escuelaing.arep.LinkedList;
+import edu.escuelaing.arep.Calculos;*/
 
 
 import org.junit.Assert;
@@ -10,6 +10,7 @@ import java.text.DecimalFormat;
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 /**
@@ -43,10 +44,12 @@ public class AppTest {
         String deviation = df.format(programa.deviation());
         String cMean =  "550,60";
         String cDeviation = "572,03";
-        if(mean.equals(cMean) && deviation.equals(cDeviation)){
+        assertEquals(mean, cMean);
+        assertEquals(deviation, cDeviation);
+        /*if(mean.equals(cMean) && deviation.equals(cDeviation)){
             resp = true;
         }
-        assertTrue(resp);
+        assertTrue(resp);*/
     }
 
     /**
