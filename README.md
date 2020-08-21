@@ -61,5 +61,7 @@ si se quiere volver a ingresar diferente datos, se debe dar click en el boton vo
 
 El reporte fue generado mediante latex, su nombre es Media y Desviacion estadar. Se encuentra en la raiz del proyecto
 
+![Report](https://github.com/jnicolasct/AREP-LAB-HEROKU/blob/master/Implementacion_Heroku_y_Spark.pdf)
+
 ## Autor
   Johan Nicolas Cortes Torres
